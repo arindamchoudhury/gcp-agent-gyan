@@ -140,6 +140,50 @@ def expand_all_interactive(page) -> None:
     page.wait_for_timeout(1000)
 
 
+def extract_tab_panels(page) -> str:
+    """Extract text from all tab panels, including CSS-hidden ones.
+
+    Tab widgets (exclusive: only one panel visible at a time) leave all but
+    the last-clicked panel hidden when the page is extracted via inner_text().
+    This function temporarily un-hides each panel to read its text, then
+    restores the original visibility.
+    """
+    try:
+        panels = page.evaluate("""
+        () => {
+            const selectors = [
+                '[role="tabpanel"]',
+                '.blocks-tabs__content-item',
+                '[class*="tab__panel"]',
+                '[class*="tab-panel"]',
+                '[class*="tabpanel"]',
+            ];
+            for (const sel of selectors) {
+                const els = Array.from(document.querySelectorAll(sel));
+                if (els.length < 2) continue;
+                const results = [];
+                for (const el of els) {
+                    const prev = el.style.display;
+                    el.style.display = 'block';
+                    const text = el.innerText.trim();
+                    el.style.display = prev;
+                    if (text.length > 30) results.push(text);
+                }
+                if (results.length >= 2) return results;
+            }
+            return [];
+        }
+        """)
+    except Exception:
+        return ""
+
+    if not panels:
+        return ""
+
+    print(f"Tab panels: captured {len(panels)} panel(s)", file=sys.stderr)
+    return "\n\n=== Tab Panels ===\n\n" + "\n\n---\n\n".join(panels)
+
+
 def extract_carousel_cards(page) -> str:
     """Walk through flashcard carousels (next-slide button pattern) and collect all cards.
 
@@ -275,6 +319,9 @@ def fetch(url: str, slug: str, out_dir: Path, timeout_ms: int) -> Path:
         # Collect carousel/flashcard content (hidden-by-CSS slides)
         carousel_text = extract_carousel_cards(page)
 
+        # Collect all tab panel content (hidden panels excluded from inner_text)
+        tab_panel_text = extract_tab_panels(page)
+
         # Collect content image URLs (diagrams, screenshots)
         image_block = extract_images(page, url)
 
@@ -312,6 +359,8 @@ def fetch(url: str, slug: str, out_dir: Path, timeout_ms: int) -> Path:
 
     if carousel_text:
         content = content + "\n\n" + carousel_text
+    if tab_panel_text:
+        content = content + "\n\n" + tab_panel_text
     if image_block:
         content = content + image_block
 

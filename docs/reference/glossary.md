@@ -49,3 +49,4 @@
 | LLM-driven dynamic routing | ADK orchestration mode where the LLM adapts its strategy in real-time based on incoming information, rather than following a predetermined pipeline | [[gcloud-agents-adk-intro]] |
 | Execution trajectory | The reasoning path an agent took to reach its answer; evaluated separately from answer quality in ADK's built-in evaluation | [[gcloud-agents-adk-intro]] |
 | A2A protocol | Agent-to-Agent protocol; enables secure, standardized communication between agents from different vendors — complements MCP (agent-to-tool) with agent-to-agent connectivity | [[gcloud-agents-adk-intro]] |
+| Native streaming | ADK built-in support for bidirectional audio and video streaming; enables real-time, human-like interactions beyond text | [[gcloud-agents-adk-intro]] |

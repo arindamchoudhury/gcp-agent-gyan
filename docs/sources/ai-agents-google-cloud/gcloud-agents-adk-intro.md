@@ -18,8 +18,6 @@ A deep dive into ADK's core features across three pillars: precision and control
 - Supports the **Agent-to-Agent (A2A) protocol** alongside MCP — enables standardized communication between agents from different vendors.
 - Safety patterns are built in: explicit authorization for actions, in-tool guardrails, sandboxed code execution, and network controls to prevent data exfiltration.
 
-> ⚠️ **Partial capture:** The "Deployment options" and "Native streaming" tab content was not captured — exclusive tab behavior kept only the last-clicked tab (Safety and Security) visible during extraction.
-
 ## Notes
 
 ### Three feature pillars
@@ -79,14 +77,24 @@ Trajectory evaluation is important: an agent can get the right answer through th
 - Sandboxed code execution
 - Network controls to prevent data exfiltration
 
-> ⚠️ **Partial capture:** Deployment options (how/where to deploy ADK agents) and Native streaming (real-time output) tab content not captured.
+**Deployment options** — ADK agents are containerized, giving three deployment paths:
+
+| Path | Platform | Trade-off |
+|---|---|---|
+| **Managed runtime** | Vertex AI Agent Engine | Fully managed, auto-scaling — minimal operational overhead |
+| **Serverless** | Cloud Run | Scalable, serverless container platform — more control than Agent Engine |
+| **Custom infrastructure** | GKE or any container platform | Maximum control — you own the environment |
+
+Because ADK agents are containerized, the "any container platform" path means they can run on AWS (ECS, EKS), Azure, Databricks, or self-hosted Kubernetes — not just GCP.
+
+**Native streaming:** ADK has built-in support for **bidirectional audio and video streaming** — sending and receiving live video and sound simultaneously. Enables natural, human-like real-time interactions beyond text.
 
 ## Open questions
 
-- What are ADK's supported deployment targets? (Deployment options tab not captured — likely Agent Engine + local + other GCP services)
-- What does "native streaming" mean in ADK — token-level streaming, event streaming, or something else?
 - How does A2A differ from simply calling another ADK agent as a tool? Is it cross-vendor or also cross-network?
 - What are the limits of workflow agents vs. LLM routing — when is each preferred?
+- What protocols does native streaming use — WebRTC, WebSockets, gRPC?
+- Does Agent Engine support the streaming capability, or is that only for self-hosted deployments?
 
 ## Related sources
 
