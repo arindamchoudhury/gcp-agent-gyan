@@ -19,6 +19,7 @@ Cross-source synthesis on what AI agents are, how they work, and what makes them
 - [[gemini-enterprise-intro]] — deep-dive into Gemini Enterprise internals: four agent types (Google-built, no-code, high-code, third-party), functional taxonomy, orchestrator-hub workflow
 - [[geaplab-create-app]] — hands-on walkthrough: app creation, data store connection, pre-built agents (Idea Generation, Deep Research), NotebookLM Studio
 - [[gcloud-agents-adk-intro]] — ADK deep-dive: three pillars (precision & control, dev experience, open ecosystem), workflow agent types, A2A protocol, built-in evaluation with trajectory
+- [[t-devagent-i-m2-l0]] — four Agent() parameters in depth; description vs instruction distinction; root_agent convention
 
 ## What is an AI agent?
 

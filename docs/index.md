@@ -8,6 +8,7 @@ Personal notes from articles, documentation, papers, and web sources.
 - [2. Gemini Enterprise](sources/gemini-enterprise/index.md) — 1 lesson · C-AGTSPI-B
 - [3. Gemini Enterprise Lab](sources/gemini-enterprise-lab/index.md) — 1 lesson · T-GEAPLAB-B
 - [4. Developer Agent Fundamentals](sources/developer-agent-fundamentals/index.md) — 7 lessons · T-DEVAGENTFUN-I
+- [5. Building with ADK](sources/building-with-adk/index.md) — 1 lesson · T-DEVAGENT-I
 
 ## Topics
 

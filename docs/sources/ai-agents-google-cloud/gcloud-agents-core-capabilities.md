@@ -32,6 +32,7 @@ Agents learn from experience and improve over time, unlike static rule-based sys
 ### Multi-agent collaboration
 
 Single agents are powerful, but they reach their ceiling on very large or complex goals. Multi-agent systems address this by:
+
 - Sharing knowledge across agents
 - Dividing tasks by specialization (e.g., orchestrator → verification agent → fulfillment agent)
 - Coordinating to achieve goals no single agent could manage alone

@@ -64,6 +64,7 @@ Like the car analogy (engine/wheels/steering), the restaurant model emphasizes t
 ### Additional resources mentioned
 
 The PDF cites five resources for further learning (URLs not included in the PDF — titles only):
+
 - "Intro to AI Agents" — Google; deep dive on definitions, capabilities, use cases, architectural approaches
 - "Workflows versus agents" — how agentic workflows differ from traditional ones
 - "The Agent Factory – Episode 1: Agents" — what makes a true agent; Agent Developer Kit

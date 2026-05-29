@@ -5,6 +5,8 @@
 > **Tags:** ai-agents, google-cloud, vertex-ai, adk, agent-engine, gemini, platforms
 > **Type:** documentation
 
+> 📌 **Platform rename (2026):** Vertex AI was rebranded to **Gemini Enterprise Agent Platform** at Google Cloud Next 2026. References to "Vertex AI Agent Builder" in this note reflect the terminology used in the source material (v1.0.0, 2026-05-28). Features still exist, reorganised under a "Models" sub-menu. SDK migration deadline: June 24, 2026.
+
 ## Summary
 
 Maps Google Cloud's agent development landscape to a three-tier stack: off-the-shelf SaaS agents for business users (Gemini Enterprise), no-code/low-code tools for customer-facing bots (Conversational Agents), and a full developer platform for custom agents (Vertex AI Agent Builder). The choice between them is primarily a function of who is building and how much control they need. An enterprise governance layer applies across all tiers.

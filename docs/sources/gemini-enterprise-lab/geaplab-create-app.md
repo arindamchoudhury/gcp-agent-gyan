@@ -65,6 +65,7 @@ Both follow the same pattern: agent proposes a plan for review before executing 
 ### NotebookLM in practice
 
 Sources can be: Google Docs, website URLs, YouTube videos, copied text, or uploaded files. Once loaded:
+
 - Chat-style Q&A with citations against the uploaded corpus.
 - **Save responses as notes** for later retrieval.
 - **Studio tab**: transform source material into audio overviews, video presentations ("Marketing by the Numbers"), mind maps, and reports.

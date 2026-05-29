@@ -61,7 +61,8 @@ Four questions; "yes" to most means use an agent:
 3. **Needs to reason about the best approach?** (→ model as decision maker, [[devagentfun-m2-l1]])
 4. **Needs to take actions in external systems?** (→ tool use + environmental awareness, [[devagentfun-m1-l1]])
 
-Decision paths:
+**Decision paths**
+
 - No to multiple steps + no complex reasoning → **use simple API**
 - No to multiple steps + yes complex reasoning + no external actions → **use LLM**
 - Yes to multiple steps + no adaptation → **use workflow automation**

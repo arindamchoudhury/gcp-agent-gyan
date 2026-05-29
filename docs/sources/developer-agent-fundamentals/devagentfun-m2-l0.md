@@ -51,6 +51,7 @@ Without the three-component architecture, you write specific code for each possi
 [[gcloud-agents-architecture]] names the three building blocks as **model + tools + memory**. This source (citing the Google whitepaper directly) names them as **model + tools + orchestration**.
 
 These are not contradictory — they're different framings of the third component:
+
 - **Memory** emphasizes the agent's ability to retain and retrieve context across a task or session.
 - **Orchestration** emphasizes the process loop that connects the model's decisions to tool invocations and back — the "steering system."
 

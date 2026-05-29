@@ -28,6 +28,11 @@ nav = [
             { "Course Overview" = "sources/gemini-enterprise-lab/index.md" },
             { "1. Creating a Gemini Enterprise App" = "sources/gemini-enterprise-lab/geaplab-create-app.md" },
         ]},
+        { "5. Building with ADK" = [
+            { "Course Overview" = "sources/building-with-adk/index.md" },
+            { "1. ADK Environment Setup" = "sources/building-with-adk/t-devagent-i-m1-l1.md" },
+            { "2. Defining Your Agent's Identity" = "sources/building-with-adk/t-devagent-i-m2-l0.md" },
+        ]},
         { "4. Developer Agent Fundamentals" = [
             { "Course Overview" = "sources/developer-agent-fundamentals/index.md" },
             { "1. Evolution: LLMs to Agents" = "sources/developer-agent-fundamentals/devagentfun-m1-l0.md" },

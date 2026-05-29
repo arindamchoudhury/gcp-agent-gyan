@@ -25,6 +25,13 @@ All notes organised by course.
 |---|---|---|
 | [Creating a Gemini Enterprise Application](gemini-enterprise-lab/geaplab-create-app.md) | 2026-05-28 | gemini-enterprise, hands-on, data-stores, notebooklm, pre-built-agents |
 
+## Building with ADK (T-DEVAGENT-I)
+
+| Title | Added | Tags |
+|---|---|---|
+| [ADK Environment Setup](building-with-adk/t-devagent-i-m1-l1.md) | 2026-05-29 | adk, setup, python, gemini |
+| [Defining Your Agent's Identity](building-with-adk/t-devagent-i-m2-l0.md) | 2026-05-29 | adk, agent-identity, multi-agent, instructions |
+
 ## Developer Agent Fundamentals (T-DEVAGENTFUN-I)
 
 | Title | Added | Tags |

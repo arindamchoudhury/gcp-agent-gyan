@@ -28,6 +28,7 @@ The model is the "brain" of the agent. Modern agents use **thinking models** —
 Tools let the agent interact with the world — APIs, databases, code execution, search.
 
 **Model Context Protocol (MCP)** is the dominant standard for agent tool access:
+
 - Like an API, but enriched with semantic instructions
 - Tells the agent *what* an API does, *when* to use it, and *what the inputs/outputs mean*
 - Gives the agent enough understanding to decide autonomously which tool to invoke in which situation
@@ -45,6 +46,7 @@ Memory gives agents context across interactions. Three layers:
 | **Long-term memory** | Persistent storage; retrieved and injected into context as needed |
 
 **Context management is active work.** As a task evolves, the agent (or system) must:
+
 - Compress or summarize old context to make room
 - Drop irrelevant context
 - Pull in new context from short/long-term memory when needed

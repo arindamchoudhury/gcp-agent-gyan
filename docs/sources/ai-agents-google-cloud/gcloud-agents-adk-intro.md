@@ -5,6 +5,8 @@
 > **Tags:** ai-agents, google-cloud, adk, agent-development-kit, multi-agent, orchestration, mcp, a2a
 > **Type:** documentation
 
+> 📌 **Platform rename (2026):** "Vertex AI Agent Engine" referenced in this note is now part of the **Gemini Enterprise Agent Platform**. Terminology reflects the source material (v1.0.0). SDK migration deadline: June 24, 2026.
+
 ## Summary
 
 A deep dive into ADK's core features across three pillars: precision and control (flexible orchestration, multi-agent architecture, rich tooling), integrated developer experience (code-first, CLI + web UI, built-in evaluation), and open ecosystem (model flexibility, interoperability, MCP + A2A protocols, safety). Expands significantly on [[gcloud-agents-building]]'s one-row introduction to ADK.
