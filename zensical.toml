@@ -1,0 +1,46 @@
+[project]
+site_name = "Research Notes"
+site_description = "Personal notes from articles, documentation, papers, and web sources."
+site_author = "arindam@live.com"
+
+nav = [
+    { "Home" = "index.md" },
+    { "Topics" = [
+        { "All Topics" = "topics/index.md" },
+        { "AI Agents" = "topics/ai-agents.md" },
+    ]},
+    { "Notes" = [
+        { "All Notes" = "sources/index.md" },
+        { "1. AI Agents on Google Cloud" = [
+            { "Course Overview" = "sources/ai-agents-google-cloud/index.md" },
+            { "1. Introduction to AI Agents" = "sources/ai-agents-google-cloud/gcloud-agents-intro.md" },
+            { "2. AI Agent Core Capabilities" = "sources/ai-agents-google-cloud/gcloud-agents-core-capabilities.md" },
+            { "3. The Agent Architecture" = "sources/ai-agents-google-cloud/gcloud-agents-architecture.md" },
+            { "4. Enterprise Use Cases" = "sources/ai-agents-google-cloud/gcloud-agents-enterprise-use-cases.md" },
+            { "5. Developing Agents with Google Cloud" = "sources/ai-agents-google-cloud/gcloud-agents-building.md" },
+            { "6. Introduction to ADK" = "sources/ai-agents-google-cloud/gcloud-agents-adk-intro.md" },
+        ]},
+        { "2. Gemini Enterprise" = [
+            { "Course Overview" = "sources/gemini-enterprise/index.md" },
+            { "1. About Gemini Enterprise" = "sources/gemini-enterprise/gemini-enterprise-intro.md" },
+        ]},
+        { "3. Gemini Enterprise Lab" = [
+            { "Course Overview" = "sources/gemini-enterprise-lab/index.md" },
+            { "1. Creating a Gemini Enterprise App" = "sources/gemini-enterprise-lab/geaplab-create-app.md" },
+        ]},
+        { "4. Developer Agent Fundamentals" = [
+            { "Course Overview" = "sources/developer-agent-fundamentals/index.md" },
+            { "1. Evolution: LLMs to Agents" = "sources/developer-agent-fundamentals/devagentfun-m1-l0.md" },
+            { "2. The Agent Abstraction" = "sources/developer-agent-fundamentals/devagentfun-m1-l1.md" },
+            { "3. Three-Component Architecture" = "sources/developer-agent-fundamentals/devagentfun-m2-l0.md" },
+            { "4. The Three Components in Detail" = "sources/developer-agent-fundamentals/devagentfun-m2-l1.md" },
+            { "5. When to Use Agents: Intro" = "sources/developer-agent-fundamentals/devagentfun-m3-l0.md" },
+            { "6. Knowing When Agents Add Value" = "sources/developer-agent-fundamentals/devagentfun-m3-l1.md" },
+            { "7. Course Wrap-Up" = "sources/developer-agent-fundamentals/devagentfun-m4-l0.md" },
+        ]},
+    ]},
+    { "Reference" = [
+        { "Glossary" = "reference/glossary.md" },
+        { "Resources" = "reference/resources.md" },
+    ]},
+]
