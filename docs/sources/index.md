@@ -31,6 +31,8 @@ All notes organised by course.
 |---|---|---|
 | [ADK Environment Setup](building-with-adk/t-devagent-i-m1-l1.md) | 2026-05-29 | adk, setup, python, gemini |
 | [Defining Your Agent's Identity](building-with-adk/t-devagent-i-m2-l0.md) | 2026-05-29 | adk, agent-identity, multi-agent, instructions |
+| [Hands-On: Transform Your Agent](building-with-adk/t-devagent-i-m2-l1.md) | 2026-05-29 | adk, hands-on, instructions, adk-web |
+| [Three Deployment Methods](building-with-adk/t-devagent-i-m3-l0.md) | 2026-05-29 | adk, adk-run, adk-api-server, programmatic, runner |
 
 ## Developer Agent Fundamentals (T-DEVAGENTFUN-I)
 

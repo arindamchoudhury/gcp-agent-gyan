@@ -209,6 +209,14 @@ The PDF covers the four identity parameters. The full `LlmAgent` class has more:
 - Event Compaction: sliding window of recent events + summary of older ones — up to 38% token reduction, 18% latency improvement
 - `PROGRESSIVE_SSE_STREAMING` enabled by default
 
+**ADK 2.0 (May 2026) — current release v2.1.0**
+
+- `BaseAgent` now subclasses `BaseNode` — agents are nodes in a Workflow graph engine; custom `_run_async_impl()` overrides are bypassed
+- Event schema: new `node_info` and `output` fields — custom DB-backed session storage needs schema migration (JSON blob storage unaffected)
+- Never manually append to `context.session.events` — breaks graph determinism
+- Avoid broad `except Exception:` in tools — disables automatic retries; `except BaseException:` breaks HITL
+- The four `Agent()` parameters (`model`, `name`, `description`, `instruction`) are unchanged
+
 ## Open questions
 
 - Can `root_agent` be overridden via CLI flag, or must it always be that exact variable name?

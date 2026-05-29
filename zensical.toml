@@ -32,6 +32,8 @@ nav = [
             { "Course Overview" = "sources/building-with-adk/index.md" },
             { "1. ADK Environment Setup" = "sources/building-with-adk/t-devagent-i-m1-l1.md" },
             { "2. Defining Your Agent's Identity" = "sources/building-with-adk/t-devagent-i-m2-l0.md" },
+            { "3. Hands-On: Transform Your Agent" = "sources/building-with-adk/t-devagent-i-m2-l1.md" },
+            { "4. Three Deployment Methods" = "sources/building-with-adk/t-devagent-i-m3-l0.md" },
         ]},
         { "4. Developer Agent Fundamentals" = [
             { "Course Overview" = "sources/developer-agent-fundamentals/index.md" },

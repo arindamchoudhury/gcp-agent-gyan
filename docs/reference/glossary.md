@@ -50,8 +50,11 @@
 | Execution trajectory | The reasoning path an agent took to reach its answer; evaluated separately from answer quality in ADK's built-in evaluation | [[gcloud-agents-adk-intro]] |
 | A2A protocol | Agent-to-Agent protocol; enables secure, standardized communication between agents from different vendors — complements MCP (agent-to-tool) with agent-to-agent connectivity | [[gcloud-agents-adk-intro]] |
 | Native streaming | ADK built-in support for bidirectional audio and video streaming; enables real-time, human-like interactions beyond text | [[gcloud-agents-adk-intro]] |
+| Runner | ADK class that connects an agent to a session service and executes it; used for programmatic Python execution | [[t-devagent-i-m3-l0]] |
+| InMemorySessionService | ADK session service that stores conversation state in memory; swappable for persistent backends | [[t-devagent-i-m3-l0]] |
+| run_async() | Async method on Runner that streams agent events; use `event.is_final_response()` to extract the final reply | [[t-devagent-i-m3-l0]] |
 | adk create | CLI command that scaffolds a new ADK agent project with agent.py, __init__.py, and .env | [[t-devagent-i-m1-l1]] |
 | adk web | CLI command that starts a local web UI for interacting with and testing an ADK agent | [[t-devagent-i-m1-l1]] |
 | adk api_server | CLI command that deploys an ADK agent as a local API service | [[t-devagent-i-m1-l1]] |
-| root_agent | The Python variable name ADK CLI tools look for as the entry point to an agent system; separate from the internal `name` parameter inside Agent() — use `root_agent = my_agent` to assign any agent as the entry point | [[t-devagent-i-m1-l1]], [[t-devagent-i-m2-l0]] |
+| root_agent | The Python variable name ADK CLI tools (`adk web`, `adk run`, `adk api_server`) look for as the entry point; not required for programmatic execution where the agent is passed directly to `Runner(agent=...)` | [[t-devagent-i-m1-l1]], [[t-devagent-i-m2-l0]], [[t-devagent-i-m3-l0]] |
 | LlmAgent | Alias for the ADK `Agent` class; both names refer to the same class imported from `google.adk.agents.llm_agent` | [[t-devagent-i-m2-l0]] |
